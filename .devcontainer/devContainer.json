@@ -1,8 +1,9 @@
 {
-  "name": "Muslim Youth North Website Dev",
-  "dockerFile": "Dockerfile",
+  "name": "IUML Website Dev",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18.17.0"
+    }
   },
   "postCreateCommand": "npm install"
 }

@@ -1,10 +1,13 @@
 import '../styles/globals.css';
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlProvider } from 'next-intl';
 
 export default function App({ Component, pageProps }) {
+  const { messages, locale = 'en' } = pageProps;
+  console.log('Locale in _app.js:', locale);
+
   return (
-    <NextIntlClientProvider messages={pageProps.messages}>
+    <NextIntlProvider locale={locale} messages={messages}>
       <Component {...pageProps} />
-    </NextIntlClientProvider>
+    </NextIntlProvider>
   );
 }

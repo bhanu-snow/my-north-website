@@ -1,21 +1,19 @@
 {
-  "nav": {
-    "about": "About",
-    "persons": "Persons",
-    "events": "Historical Events",
-    "organizedEvents": "Organized Events",
-    "committee": "Committee",
-    "faqs": "FAQs",
-    "upExpansion": "UP Expansion",
-    "calendar": "Calendar"
-  },
-  "home": {
-    "title": "Welcome to IUML"
-  },
-  "about": {
-    "title": "About IUML"
-  },
-  "faqs": {
-    "title": "Frequently Asked Questions"
+  "common": {
+    "home": {
+      "title": "Welcome to IUML",
+      "mission": "Mission",
+      "vision": "Vision"
+    },
+    "nav": {
+      "about": "About",
+      "persons": "Persons",
+      "events": "Historical Events",
+      "organizedEvents": "Organized Events",
+      "committee": "Committee",
+      "faqs": "FAQs",
+      "upExpansion": "UP Expansion",
+      "calendar": "Calendar"
+    }
   }
 }

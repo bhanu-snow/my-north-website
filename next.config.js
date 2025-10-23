@@ -1,21 +1,13 @@
-/** @type {import('next').NextConfig} */
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
+
 const nextConfig = {
   reactStrictMode: true,
-  i18n: {
-    locales: ['en', 'hi'],
-    defaultLocale: 'en',
-  },
   images: {
     domains: ['localhost'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/:locale(en|hi)/:path*',
-        destination: '/:path*',
-      },
-    ];
-  },
+  // No i18n property here
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

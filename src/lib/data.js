@@ -1,18 +1,4 @@
-import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-
-// Only import fs/promises on the server
-const isServer = typeof window === 'undefined';
-const fs = isServer ? require('fs/promises') : null;
-
-export async function getData() {
-  if (!isServer) {
-    throw new Error('getData can only be called on the server');
-  }
-  const filePath = path.join(process.cwd(), 'public', 'iuml-data.json');
-  const jsonData = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(jsonData);
-}
 
 export function validateJSON(data) {
   const requiredFields = {
