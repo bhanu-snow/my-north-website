@@ -1,0 +1,100 @@
+{
+  "mission": {
+    "guid": "550e8400-e29b-41d4-a716-446655440006",
+    "content_en": "The Indian Union Muslim League (IUML) is dedicated to fostering unity, promoting social justice, and empowering communities in Uttar Pradesh through education and civic engagement.",
+    "content_hi": "इंडियन यूनियन मुस्लिम लीग (IUML) उत्तर प्रदेश में एकता को बढ़ावा देने, सामाजिक न्याय को प्रोत्साहित करने और शिक्षा और नागरिक भागीदारी के माध्यम से समुदायों को सशक्त बनाने के लिए समर्पित है।"
+  },
+  "vision": {
+    "guid": "550e8400-e29b-41d4-a716-446655440007",
+    "content_en": "To create an inclusive society in Uttar Pradesh where every individual has access to opportunities and can contribute to the state's progress.",
+    "content_hi": "उत्तर प्रदेश में एक समावेशी समाज बनाने के लिए जहां प्रत्येक व्यक्ति को अवसर प्राप्त हों और वह राज्य की प्रगति में योगदान दे सके।"
+  },
+  "about": {
+    "guid": "550e8400-e29b-41d4-a716-446655440008",
+    "content_en": "Founded in 1948, IUML has a rich history of advocating for minority rights and community development. In Uttar Pradesh, we focus on grassroots initiatives and historical preservation.",
+    "content_hi": "1948 में स्थापित, IUML का अल्पसंख्यक अधिकारों और समुदाय विकास के लिए वकालत करने का एक समृद्ध इतिहास है। उत्तर प्रदेश में, हम जमीनी स्तर की पहल और ऐतिहासिक संरक्षण पर ध्यान केंद्रित करते हैं।"
+  },
+  "faqs": [
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440004",
+      "question_en": "What is IUML's mission?",
+      "answer_en": "To promote unity and progress in UP.",
+      "question_hi": "IUML का मिशन क्या है?",
+      "answer_hi": "उत्तर प्रदेश में एकता और प्रगति को बढ़ावा देना।"
+    },
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440005",
+      "question_en": "How can I join IUML?",
+      "answer_en": "Contact our state committee via the website or attend a local event.",
+      "question_hi": "मैं IUML में कैसे शामिल हो सकता हूँ?",
+      "answer_hi": "वेबसाइट के माध्यम से हमारी राज्य समिति से संपर्क करें या स्थानीय आयोजन में भाग लें।"
+    }
+  ],
+  "persons": [
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "Ashfaqulla Khan",
+      "slug": "ashfaqulla-khan",
+      "birth": "1900-10-22",
+      "death": "1927-12-19",
+      "birth_place": "Shahjahanpur, UP",
+      "death_place": "Faizabad, UP",
+      "origin_country": "India",
+      "about": "Freedom fighter, revolutionary, and poet.",
+      "type": "historical",
+      "category": "freedom_fighter",
+      "portrait": "/images/ashfaqulla-khan.jpg",
+      "essay_en": "Ashfaqulla Khan was a key figure in India's freedom struggle...",
+      "essay_hi": "अशफाकुल्ला खान भारत के स्वतंत्रता संग्राम में एक प्रमुख व्यक्ति थे..."
+    }
+  ],
+  "events": [
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Kakori Train Robbery",
+      "slug": "kakori-train-robbery",
+      "date": "1925-08-09",
+      "about": "Revolutionary act to fund freedom movement.",
+      "type": "historical",
+      "category": "revolution",
+      "images": ["/images/kakori-1.jpg"],
+      "essay_en": "The Kakori Train Robbery was a bold act by revolutionaries...",
+      "essay_hi": "काकोरी ट्रेन डकैती क्रांतिकारियों का एक साहसी कार्य था..."
+    }
+  ],
+  "committee_members": [
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440002",
+      "committee_level": "state",
+      "post": "President",
+      "name": "John Doe",
+      "contact": "john.doe@example.com",
+      "profile_pic_url": "/images/john-doe.jpg",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur",
+      "aadhar": "****-****-****-1234",
+      "dob": "1970-01-01",
+      "doA": "2020-01-01",
+      "worker_code": "IUML123",
+      "is_active": true,
+      "display_publish": true
+    }
+  ],
+  "organized_events": [
+    {
+      "guid": "550e8400-e29b-41d4-a716-446655440003",
+      "event_type": "corner_sabha",
+      "start_date_time": "2025-11-01T10:00:00Z",
+      "end_date_time": "2025-11-01T12:00:00Z",
+      "workers_joined": 50,
+      "images": ["/images/sabha-1.jpg"],
+      "agenda": "Community outreach in Kanpur",
+      "location": "Kanpur, UP",
+      "organisers": ["550e8400-e29b-41d4-a716-446655440002"],
+      "party_fund": 5000,
+      "district": "Kanpur",
+      "vidhansabha": "Kanpur Central",
+      "slug": "kanpur-sabha-2025"
+    }
+  ]
+}

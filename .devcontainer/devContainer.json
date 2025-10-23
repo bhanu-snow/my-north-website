@@ -1,0 +1,8 @@
+{
+  "name": "Muslim Youth North Website Dev",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "npm install"
+}
