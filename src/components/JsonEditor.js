@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import JSONEditor from 'react-json-editor-ajrm';
-import { getData, validateJSON } from '../lib/data';
+import { validateJSON } from '../lib/data';
 
 export default function JSONEditorComponent() {
   const [data, setData] = useState(null);
@@ -10,7 +10,8 @@ export default function JSONEditorComponent() {
 
   useEffect(() => {
     async function fetchData() {
-      const jsonData = await getData();
+      const response = await fetch('/iuml-data.json');
+      const jsonData = await response.json();
       setData(jsonData);
     }
     fetchData();
@@ -36,7 +37,7 @@ export default function JSONEditorComponent() {
   };
 
   const handleLogin = () => {
-    if (password === 'iuml_admin_2025') { // Replace with secure auth in production
+    if (password === 'iuml_admin_2025') {
       setIsAuthenticated(true);
     } else {
       alert('Invalid password');

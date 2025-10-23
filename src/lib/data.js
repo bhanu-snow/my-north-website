@@ -1,8 +1,14 @@
-import fs from 'fs/promises';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
+// Only import fs/promises on the server
+const isServer = typeof window === 'undefined';
+const fs = isServer ? require('fs/promises') : null;
+
 export async function getData() {
+  if (!isServer) {
+    throw new Error('getData can only be called on the server');
+  }
   const filePath = path.join(process.cwd(), 'public', 'iuml-data.json');
   const jsonData = await fs.readFile(filePath, 'utf8');
   return JSON.parse(jsonData);
@@ -21,7 +27,6 @@ export function validateJSON(data) {
   };
 
   const errors = [];
-  // Validate single objects (mission, vision, about)
   ['mission', 'vision', 'about'].forEach((section) => {
     if (!data[section]) {
       errors.push(`Missing ${section} object`);
@@ -36,7 +41,6 @@ export function validateJSON(data) {
       }
     });
   });
-  // Validate arrays
   ['faqs', 'persons', 'events', 'committee_members', 'organized_events'].forEach((collection) => {
     if (!Array.isArray(data[collection])) {
       errors.push(`Invalid or missing array for ${collection}`);

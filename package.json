@@ -1,5 +1,5 @@
 {
-  "name": "iuml-website",
+  "name": "my-north-website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,10 @@
     "export": "next export"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "^14.2.15",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "next-intl": "^3.0.0-beta.19",
+    "next-intl": "^3.17.0",
     "react-big-calendar": "^1.8.1",
     "next-share": "^0.5.0",
     "fuse.js": "^6.6.2",
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "eslint": "^8.43.0",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "^14.2.15"
   }
 }
