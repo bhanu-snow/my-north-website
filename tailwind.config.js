@@ -1,18 +1,24 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        hindi: ['Noto Serif Devanagari', 'sans-serif'],
-      },
       colors: {
-        iumlGreen: '#008000',
+        primary: '#0066FF',
+        darkmode: '#00224a',
+        grey: '#F4F5F6',
+        border: '#DBDBDB',
+        deepSlate: '#02398A'
       },
-    },
+      fontFamily: {
+        hindi: ['Noto Sans Devanagari', 'sans-serif']
+      }
+    }
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 };
